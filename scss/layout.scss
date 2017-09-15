@@ -1,0 +1,24 @@
+
+@media all and (orientation:portrait) {
+    h1 {
+        color: white;
+    }
+    .swiper-container-vertical > .swiper-pagination-bullets {
+        left: 10px;
+        top: 50%;
+        -webkit-transform: translate3d(0px, -50%, 0);
+        transform: translate3d(0px, -50%, 0);
+    }
+}
+
+@media all and (orientation:landscape) {
+    h1 {
+        color: yellow;
+    }
+    .swiper-container-vertical > .swiper-pagination-bullets {
+        right: 10px;
+        top: 50%;
+        -webkit-transform: translate3d(0px, -50%, 0);
+        transform: translate3d(0px, -50%, 0);
+    }
+}

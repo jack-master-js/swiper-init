@@ -1,0 +1,80 @@
+@import 'layout';
+
+body {
+  background: #292929;
+}
+.music-icon {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background: url(../img/music-white.png) no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  z-index: 2;
+  animation: 10s linear 2s rotating;
+  animation-iteration-count: infinite;
+  animation-play-state:running;
+}
+.swiper-wrapper {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.swiper-slide {
+  box-sizing: border-box;
+  padding: 4%;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-wrapper .slider01 {
+  background: rgba(255, 0, 0, 0.5);
+}
+
+.swiper-wrapper .slider02 {
+  background: rgba(0, 255, 0, 0.5);
+}
+
+.swiper-wrapper .slider03 {
+  background: rgba(0, 0, 255, 0.5);
+}
+
+.swiper-wrapper .slider04 {
+  background: rgba(255, 255, 0, 0.5);
+}
+
+.swiper-wrapper .slider05 {
+  background: rgba(0, 255, 255, 0.5);
+}
+
+.swiper-pagination {
+  position: fixed;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: white;
+}
+
+.parallax-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 105%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes rotating {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+@-webkit-keyframes rotating {
+  from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}
+}

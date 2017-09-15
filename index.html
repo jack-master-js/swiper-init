@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/foundation-base-6.2.css">
+	<link rel="stylesheet" href="css/foundation-grid-6.2.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/swiper-3.4.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<script src="js/jquery-1.9.min.js"></script>
+	<script src="js/swiper-3.4.min.js"></script>
+	<script src="js/app.js"></script>
+	<title>index</title>
+</head>
+<body>
+	<div>
+		<i class="music-icon" onclick="toggleMusic()"></i>
+		<audio id="music" src="audio/KissTheRain.mp3" autoplay loop preload="auto"></audio>
+	</div>
+	<div id="container" class="swiper-container">
+		<div class="parallax-bg" style="background-image:url(img/body.jpg)" data-swiper-parallax="-5%"></div>
+		<div class="swiper-wrapper">
+			<div class="swiper-slide slider01"><h1>slider01</h1></div>
+			<div class="swiper-slide slider02"><h1>slider02</h1></div>
+			<div class="swiper-slide slider03"><h1>slider03</h1></div>
+			<div class="swiper-slide slider04"><h1>slider04</h1></div>
+			<div class="swiper-slide slider05"><h1>slider05</h1></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<script>
+		//设置swiper相关属性值
+		var mySwiper = new Swiper('.swiper-container', {
+			direction : 'vertical',
+			width : window.innerWidth,
+			height : window.innerHeight,
+			pagination : '.swiper-pagination',
+			parallax : true
+		})
+		//消除滚动条
+		$('#container').height(window.innerHeight)
+	</script>
+</body>
+</html>
